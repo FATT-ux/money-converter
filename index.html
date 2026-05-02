@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Конвектор валют</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="./images/icons.png" type="image/x-icon">
+</head>
+<body>
+    <header class="header">
+        <div class="container">
+
+            <div class="header-text">
+                <h1 class="header-title">Курс доллара к разным валютом</h1>
+            </div>
+
+            <div class="money">
+                <span id="RUB" class="currency"></span>
+                <span id="EUR" class="currency"></span>
+                <span id='CNY' class="currency"></span>
+                <span id="KZT" class="currency"></span>
+            </div>
+        </div>
+    </header>
+
+    <main class="main">
+        <section class="welcome">
+            <div class="container">
+                <div class="welcome-block">
+                    <label for="currency-welcome-input">Выберите начальную валюту:</label>
+                    <select name="currency-welcome-input" id="currency-welcome-input">
+                    <option value="USD">USD</option>
+                    <option value="RUB">RUB</option>
+                    <option value="CNY">CNY</option>
+                    <option value="KZT">KZT</option>
+                    </select>
+                </div>
+
+                <div class="welcome-block">
+                    <label for="currency-welcome-output">Выберите конечную валюту:</label>
+                    <select name="currency-welcome-output" id="currency-welcome-output">
+                    <option value="RUB">RUB</option>
+                    <option value="USD">USD</option>
+                    <option value="CNY">CNY</option>
+                    <option value="KZT">KZT</option>
+                    </select>
+                </div>
+            </div>
+        </section>
+
+        <section class="currency_transfer">
+            <div class="container">
+                <div class="currency_transfer-input">
+                    <input type="number" placeholder="Ввод" class="transfer-input">
+                </div>
+
+                <div class="arrow">
+                    <img src="./images/arrow-img.png" alt="" class="arrow-img">
+                </div>
+
+                <div class="currency_transfer-output">
+                    <input type="number" placeholder="Вывод" class="transfer-input transfer-output">
+                </div>
+            </div>
+        </section>
+
+        <section class="BTN">
+            <div class="container">
+            <button class="btn" id="btn">Перевести</button>
+            </div>
+        </section>
+    </main>
+
+
+    <script src="script.js"></script>
+</body>
+</html>

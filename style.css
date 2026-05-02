@@ -1,0 +1,74 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100..900&display=swap');
+body{
+    box-sizing: border-box;
+    margin: 0;
+    font-family: "Roboto", sans-serif;
+    font-size: 20px;
+}
+.container{
+    max-width: 650px;
+    margin: 0 auto;
+    padding: 0 15px;
+}
+.header{
+    margin-top: 15px;
+}
+.header .container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.money{
+    display: flex;
+    gap: 15px;
+    font-size: 20px;
+}
+.welcome{
+    margin-top: 150px;
+}
+
+.welcome-block{
+    display: flex;
+    gap: 10px;
+}
+.welcome-block + .welcome-block{
+    margin-top: 15px;
+}
+.currency_transfer{
+    margin-top: 40px;
+}
+.currency_transfer .container{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+
+}
+.transfer-input{
+    border-radius: 10px;
+    border:1px solid rgb(222, 222, 222);
+    padding: 10px 10px;
+    font-size: 20px;
+}
+
+
+.arrow-img{
+    width: 64px;
+}
+
+.BTN{
+    margin-top: 50px;
+}
+.BTN .container{
+    display: flex;
+    justify-content: center;
+}
+.btn{
+    border-radius: 8px;
+    cursor: pointer;
+    border:none;
+    padding: 15px 30px;
+    background-color: rgb(5, 113, 190);
+    color: #fff;
+    font-size: 20px;
+}
